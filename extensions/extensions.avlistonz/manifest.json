@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "extensionsIG.avl",
+  "version": "1.46",
+  "description": "v1.46: aviso neutro quando a data nao puder ser confirmada, timeout seguro de destaque e tempo de resposta; funcoes anteriores preservadas.",
+  "permissions": [
+    "cookies",
+    "storage",
+    "declarativeNetRequestWithHostAccess",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.instagram.com/*",
+    "https://ebooksucessodigital.online/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "action": {
+    "default_title": "extensionsIG.avl",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.instagram.com/*"
+      ],
+      "js": [
+        "instagram-overlay.js",
+        "code-autofill.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://www.instagram.com/*",
+        "*://instagram.com/*"
+      ],
+      "js": [
+        "instagram-photo-hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "*://www.instagram.com/*",
+        "*://instagram.com/*"
+      ],
+      "js": [
+        "instagram-profile-edit.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://ebooksucessodigital.online/*"
+      ],
+      "js": [
+        "flow-login.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

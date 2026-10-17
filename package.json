@@ -1,0 +1,26 @@
+{
+  "name": "automacaodolphin",
+  "version": "1.0.0",
+  "description": "Espelha ações do perfil mãe nos demais perfis (Dolphin Anty, AdsPower ou GoLogin)",
+  "main": "index.js",
+  "scripts": {
+    "dolphin": "node sync.js dolphin",
+    "adspower": "node sync.js adspower",
+    "gologin": "node sync.js gologin",
+    "painel": "node painel.js",
+    "watcher": "node watcher.js",
+    "chrome-watcher": "node watcher.js chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "adm-zip": "^0.6.1",
+    "gologin": "^3.0.7",
+    "puppeteer-core": "^25.14.0"
+  },
+  "allowScripts": {
+    "sqlite3@5.1.7": true
+  }
+}

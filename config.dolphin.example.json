@@ -1,0 +1,11 @@
+{
+  "token": "COLE_SEU_TOKEN_API_AQUI",
+  "masterId": "",
+  "profileIds": [],
+  "nameFilter": "",
+  "maxProfiles": 0,
+  "localApi": "http://localhost:3001/v1.0",
+  "navSyncDelayMs": 1000,
+  "startDelayMs": 1500,
+  "stopProfilesOnExit": false
+}

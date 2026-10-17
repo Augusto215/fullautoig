@@ -1,0 +1,13 @@
+{
+  "token": "COLE_SEU_TOKEN_API_AQUI",
+  "masterId": "",
+  "profileIds": [],
+  "nameFilter": "",
+  "maxProfiles": 0,
+  "navSyncDelayMs": 1000,
+  "startDelayMs": 1500,
+  "randomizeEmail": true,
+  "randomizeUsername": true,
+  "skipVerificationCodes": true,
+  "tileWindows": true
+}

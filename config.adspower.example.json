@@ -1,0 +1,13 @@
+{
+  "useActive": true,
+  "apiKey": "",
+  "masterId": "",
+  "profileIds": [],
+  "groupId": "",
+  "nameFilter": "",
+  "maxProfiles": 0,
+  "localApi": "http://local.adspower.net:50325",
+  "navSyncDelayMs": 1000,
+  "startDelayMs": 1500,
+  "stopProfilesOnExit": false
+}

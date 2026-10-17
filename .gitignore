@@ -1,0 +1,13 @@
+node_modules/
+
+# sessões do Gmail do watcher
+chrome-watcher-data/
+
+# configs com tokens/estado local (os .example.json vão para o repositório)
+config.*.json
+!config.*.example.json
+
+# dados das contas e emails
+emails.txt
+emails-usados.txt
+contas-*.csv

@@ -1,0 +1,9 @@
+{
+  "chromePort": 9222,
+  "chromePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "userDataDir": "",
+  "profileDirectory": "",
+  "panelUrl": "http://localhost:3333",
+  "pollMs": 5000,
+  "searchWindow": "1d"
+}
